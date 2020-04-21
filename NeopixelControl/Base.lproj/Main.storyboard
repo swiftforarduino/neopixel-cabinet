@@ -7,28 +7,28 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Hue View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="NeopixelControl" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="HueViewController" customModule="NeopixelControl" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="LhR-K9-wPp">
+                            <view hidden="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="LhR-K9-wPp">
                                 <rect key="frame" x="20" y="261" width="374" height="374"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                                 <constraints>
                                     <constraint firstAttribute="width" secondItem="LhR-K9-wPp" secondAttribute="height" multiplier="1:1" id="Uzl-Zi-l4L"/>
                                 </constraints>
                             </view>
-                            <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="10" minValue="0.0" maxValue="255" translatesAutoresizingMaskIntoConstraints="NO" id="qJU-7I-ZKF">
+                            <slider hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="10" minValue="0.0" maxValue="255" translatesAutoresizingMaskIntoConstraints="NO" id="qJU-7I-ZKF">
                                 <rect key="frame" x="18" y="433" width="378" height="31"/>
                                 <connections>
                                     <action selector="hueSliderChanged:" destination="BYZ-38-t0r" eventType="valueChanged" id="LC3-ca-A4E"/>
                                 </connections>
                             </slider>
-                            <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="100" minValue="0.0" maxValue="100" translatesAutoresizingMaskIntoConstraints="NO" id="01f-Ww-dex">
+                            <slider hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="100" minValue="0.0" maxValue="100" translatesAutoresizingMaskIntoConstraints="NO" id="01f-Ww-dex">
                                 <rect key="frame" x="18" y="762" width="378" height="31"/>
                                 <connections>
                                     <action selector="valueSliderChanged:" destination="BYZ-38-t0r" eventType="valueChanged" id="zSs-t8-s04"/>
@@ -42,8 +42,8 @@
                                     <action selector="sendValues:" destination="BYZ-38-t0r" eventType="touchUpInside" id="7FQ-vO-hjP"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="--" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qFi-qW-dBP">
-                                <rect key="frame" x="199.5" y="169" width="15.5" height="21"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="current bluetooth status" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qFi-qW-dBP">
+                                <rect key="frame" x="115" y="90" width="184.5" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -52,10 +52,10 @@
                         <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="qJU-7I-ZKF" secondAttribute="trailing" constant="20" id="0lq-ek-oNu"/>
+                            <constraint firstItem="CWu-qu-kYS" firstAttribute="top" secondItem="qFi-qW-dBP" secondAttribute="bottom" constant="8" id="3LH-E5-u3I"/>
                             <constraint firstItem="qJU-7I-ZKF" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="7Ya-3o-4kI"/>
                             <constraint firstItem="qJU-7I-ZKF" firstAttribute="trailing" secondItem="LhR-K9-wPp" secondAttribute="trailing" id="AeJ-ge-4Ev"/>
                             <constraint firstItem="qJU-7I-ZKF" firstAttribute="leading" secondItem="LhR-K9-wPp" secondAttribute="leading" id="B9w-mR-rTX"/>
-                            <constraint firstItem="qFi-qW-dBP" firstAttribute="top" secondItem="CWu-qu-kYS" secondAttribute="bottom" constant="8" id="GbW-Hd-Sc4"/>
                             <constraint firstItem="qFi-qW-dBP" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="M31-d7-Eu6"/>
                             <constraint firstItem="CWu-qu-kYS" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="75" id="MG2-Nd-czK"/>
                             <constraint firstItem="CWu-qu-kYS" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="NBi-p2-Wq9"/>

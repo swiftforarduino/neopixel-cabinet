@@ -23,8 +23,8 @@ let BLE_Characteristic_uuid_Rx = CBUUID(string: kBLE_Characteristic_uuid_Rx)// (
 class Bluetooth: NSObject {
     static let shared = Bluetooth()
 
-    enum State: String {
-        case undefined
+    enum State: Int {
+        case undefined = 1
         case disabled
         case disconnected
         case scanning
@@ -32,6 +32,7 @@ class Bluetooth: NSObject {
         case connected
         case discoveredServices
         case gotCharacteristics
+        case notifying
     }
 
     // notifications
@@ -237,11 +238,11 @@ extension Bluetooth: CBPeripheralDelegate {
     func peripheral(_ peripheral: CBPeripheral, didUpdateValueFor characteristic: CBCharacteristic, error: Error?) {
 
         if characteristic == rxCharacteristic {
-            if let value = characteristic.value, let string = String(bytes: value, encoding: .utf8) {
+            if let value = characteristic.value {
                 NotificationCenter.default.post(
                     name: Bluetooth.bluetoothUARTRX,
                     object: self,
-                    userInfo: [Bluetooth.bluetoothUARTDataKey:string])
+                    userInfo: [Bluetooth.bluetoothUARTDataKey:value])
             } else {
                 print("unable to read or decode UART rx value")
             }
@@ -281,6 +282,9 @@ extension Bluetooth: CBPeripheralDelegate {
 
         if (characteristic.isNotifying) {
             print ("Subscribed. Notification has begun for: \(characteristic.uuid)")
+            if characteristic == rxCharacteristic {
+                state = .notifying
+            }
         }
     }
 }

@@ -9,25 +9,25 @@
 /* Begin PBXBuildFile section */
 		8F5EB2D9244A5CA50001F7E8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F5EB2D8244A5CA50001F7E8 /* AppDelegate.swift */; };
 		8F5EB2DB244A5CA50001F7E8 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F5EB2DA244A5CA50001F7E8 /* SceneDelegate.swift */; };
-		8F5EB2DD244A5CA50001F7E8 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F5EB2DC244A5CA50001F7E8 /* ViewController.swift */; };
 		8F5EB2E0244A5CA50001F7E8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8F5EB2DE244A5CA50001F7E8 /* Main.storyboard */; };
 		8F5EB2E2244A5CA60001F7E8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8F5EB2E1244A5CA60001F7E8 /* Assets.xcassets */; };
 		8F5EB2E5244A5CA60001F7E8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8F5EB2E3244A5CA60001F7E8 /* LaunchScreen.storyboard */; };
 		8F5EB2ED244B1D680001F7E8 /* Bluetooth.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F5EB2EC244B1D680001F7E8 /* Bluetooth.swift */; };
 		8F5EB2F0244B1D770001F7E8 /* CoreBluetooth.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8F5EB2EF244B1D770001F7E8 /* CoreBluetooth.framework */; };
+		8F6D44DC244F42E800DAD193 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F6D44DB244F42E800DAD193 /* ViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		8F5EB2D5244A5CA50001F7E8 /* NeopixelControl.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NeopixelControl.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8F5EB2D8244A5CA50001F7E8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		8F5EB2DA244A5CA50001F7E8 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		8F5EB2DC244A5CA50001F7E8 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		8F5EB2DF244A5CA50001F7E8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		8F5EB2E1244A5CA60001F7E8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		8F5EB2E4244A5CA60001F7E8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		8F5EB2E6244A5CA60001F7E8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		8F5EB2EC244B1D680001F7E8 /* Bluetooth.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Bluetooth.swift; sourceTree = "<group>"; };
 		8F5EB2EF244B1D770001F7E8 /* CoreBluetooth.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreBluetooth.framework; path = System/Library/Frameworks/CoreBluetooth.framework; sourceTree = SDKROOT; };
+		8F6D44DB244F42E800DAD193 /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,9 +62,9 @@
 		8F5EB2D7244A5CA50001F7E8 /* NeopixelControl */ = {
 			isa = PBXGroup;
 			children = (
+				8F6D44DB244F42E800DAD193 /* ViewController.swift */,
 				8F5EB2D8244A5CA50001F7E8 /* AppDelegate.swift */,
 				8F5EB2DA244A5CA50001F7E8 /* SceneDelegate.swift */,
-				8F5EB2DC244A5CA50001F7E8 /* ViewController.swift */,
 				8F5EB2DE244A5CA50001F7E8 /* Main.storyboard */,
 				8F5EB2E1244A5CA60001F7E8 /* Assets.xcassets */,
 				8F5EB2E3244A5CA60001F7E8 /* LaunchScreen.storyboard */,
@@ -153,8 +153,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8F6D44DC244F42E800DAD193 /* ViewController.swift in Sources */,
 				8F5EB2ED244B1D680001F7E8 /* Bluetooth.swift in Sources */,
-				8F5EB2DD244A5CA50001F7E8 /* ViewController.swift in Sources */,
 				8F5EB2D9244A5CA50001F7E8 /* AppDelegate.swift in Sources */,
 				8F5EB2DB244A5CA50001F7E8 /* SceneDelegate.swift in Sources */,
 			);
