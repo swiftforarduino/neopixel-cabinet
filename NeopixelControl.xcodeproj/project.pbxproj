@@ -18,7 +18,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		8F5EB2D5244A5CA50001F7E8 /* NeopixelControl.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NeopixelControl.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		8F5EB2D5244A5CA50001F7E8 /* Cabinet.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Cabinet.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8F5EB2D8244A5CA50001F7E8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		8F5EB2DA244A5CA50001F7E8 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		8F5EB2DF244A5CA50001F7E8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -54,7 +54,7 @@
 		8F5EB2D6244A5CA50001F7E8 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				8F5EB2D5244A5CA50001F7E8 /* NeopixelControl.app */,
+				8F5EB2D5244A5CA50001F7E8 /* Cabinet.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -85,9 +85,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		8F5EB2D4244A5CA50001F7E8 /* NeopixelControl */ = {
+		8F5EB2D4244A5CA50001F7E8 /* Cabinet */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 8F5EB2E9244A5CA60001F7E8 /* Build configuration list for PBXNativeTarget "NeopixelControl" */;
+			buildConfigurationList = 8F5EB2E9244A5CA60001F7E8 /* Build configuration list for PBXNativeTarget "Cabinet" */;
 			buildPhases = (
 				8F5EB2D1244A5CA50001F7E8 /* Sources */,
 				8F5EB2D2244A5CA50001F7E8 /* Frameworks */,
@@ -97,9 +97,9 @@
 			);
 			dependencies = (
 			);
-			name = NeopixelControl;
+			name = Cabinet;
 			productName = NeopixelControl;
-			productReference = 8F5EB2D5244A5CA50001F7E8 /* NeopixelControl.app */;
+			productReference = 8F5EB2D5244A5CA50001F7E8 /* Cabinet.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -130,7 +130,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				8F5EB2D4244A5CA50001F7E8 /* NeopixelControl */,
+				8F5EB2D4244A5CA50001F7E8 /* Cabinet */,
 			);
 		};
 /* End PBXProject section */
@@ -344,7 +344,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		8F5EB2E9244A5CA60001F7E8 /* Build configuration list for PBXNativeTarget "NeopixelControl" */ = {
+		8F5EB2E9244A5CA60001F7E8 /* Build configuration list for PBXNativeTarget "Cabinet" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				8F5EB2EA244A5CA60001F7E8 /* Debug */,
