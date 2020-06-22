@@ -41,6 +41,11 @@ private func interpretColourData(data: Data) -> (hue: CGFloat, value: CGFloat)? 
     }
 }
 
+// for some reason, the app sometimes gets stuck saying "connecting"
+// which corresponds to the scanning state
+// next time this happens, see if killing the app and restarting it fixes it
+// if so it's an ios app problem and not the s4a program hanging or similar
+
 extension Bluetooth.State: CustomStringConvertible {
     var description: String {
         switch self {
